@@ -1,12 +1,13 @@
 /**
  * External dependencies
  */
-import { __ as NO__ } from '@wordpress/i18n';
+import { __ as NO__, __ } from '@wordpress/i18n';
 import { Icon } from '@wordpress/components';
 import { useDispatch, useSelect } from '@wordpress/data';
 import React, { FunctionComponent } from 'react';
 import { useDebounce } from 'use-debounce';
 import classnames from 'classnames';
+import { translate, useTranslate } from 'i18n-calypso';
 
 /**
  * Internal dependencies
@@ -71,6 +72,8 @@ const Header: FunctionComponent< Props > = ( { next, prev } ) => {
 		</span>
 	);
 
+	const ut = useTranslate();
+
 	return (
 		<div
 			className="gutenboarding__header"
@@ -109,6 +112,20 @@ const Header: FunctionComponent< Props > = ( { next, prev } ) => {
 							{ NO__( 'Create my site' ) }
 						</Link>
 					) }
+					<p>
+						<code>__( 'Manage' ): { __( 'Manage' ) }</code>
+						<br />
+						<code>translate( 'Manage' ): { translate( 'Manage' ) }</code>
+						<br />
+						<code>ut( 'Manage' ): { ut( 'Manage' ) }</code>
+						<br />
+						<code>__( 'Next' ): { __( 'Next' ) }</code>
+						<br />
+						<code>translate( 'Next' ): { translate( 'Next' ) }</code>
+						<br />
+						<code>ut( 'Next' ): { ut( 'Next' ) }</code>
+						<br />
+					</p>
 				</div>
 			</div>
 		</div>
