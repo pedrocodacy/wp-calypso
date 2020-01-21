@@ -51,6 +51,7 @@
 	"wp-env": {
 		"plugin-dir": "full-site-editing-plugin",
 		"plugin-name": "Full Site Editing Plugin",
+		"docker-template": "./bin/docker-compose.override.yml.template",
 		"welcome-logo": [
 			" _____ ____  _____ ",
 			" |  ___/ ___|| ____|",

@@ -1,0 +1,13 @@
+services:
+  wordpress-develop:
+    volumes:
+      - ../full-site-editing-plugin:/var/www/${LOCAL_DIR-src}/wp-content/plugins/%PLUGIN_INSTALL_DIR%
+  php:
+    volumes:
+      - ../full-site-editing-plugin:/var/www/${LOCAL_DIR-src}/wp-content/plugins/%PLUGIN_INSTALL_DIR%
+  cli:
+    volumes:
+      - ../full-site-editing-plugin:/var/www/${LOCAL_DIR-src}/wp-content/plugins/%PLUGIN_INSTALL_DIR%
+  phpunit:
+    volumes:
+      - ../full-site-editing-plugin:/var/www/${LOCAL_DIR-src}/wp-content/plugins/%PLUGIN_INSTALL_DIR%

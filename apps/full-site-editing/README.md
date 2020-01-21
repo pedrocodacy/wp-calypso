@@ -9,6 +9,23 @@ This app contains:
   - `starter-page-templates` Plugin
   - `blog-posts-block` Plugin
 
+## Local Development Environment
+We are using the `@wordpress/scripts` package for the most convenient development experience. For the local setup, we'll initialize a docker instance for running WordPress.
+
+### 1: Getting a WordPress copy
+
+Before doing this, make sure you have Docker installed and running. :)
+
+By default, the env command will download a version of WordPress directly to the
+plugin location on your machine. In our case, this is `apps/full-site-editing/wordpress`. This works great, and you can run this command to setup the Docker instance with that method:
+
+```sh
+# run from wp-calypso root. lerna version of `npm run env connect`
+npx lerna run env --scope='@automattic/full-site-editing' --stream -- install
+```
+
+At this point, you should be able to access WordPress at `localhost:8889`. The username is `admin` and the password is `password`.
+
 ## File Architecture
 
 ```
