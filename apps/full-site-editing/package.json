@@ -16,6 +16,7 @@
 	},
 	"homepage": "https://github.com/Automattic/wp-calypso",
 	"scripts": {
+		"env": "wp-scripts env",
 		"full-site-editing": "calypso-build --source='full-site-editing'",
 		"dev:full-site-editing": "npm run full-site-editing",
 		"build:full-site-editing": "NODE_ENV=production npm run full-site-editing",
@@ -46,5 +47,17 @@
 	},
 	"dependencies": {
 		"classnames": "2.2.6"
+	},
+	"wp-env": {
+		"plugin-dir": "full-site-editing-plugin",
+		"plugin-name": "Full Site Editing Plugin",
+		"welcome-logo": [
+			" _____ ____  _____ ",
+			" |  ___/ ___|| ____|",
+			" | |_  \\___ \\|  _|  ",
+			" |  _|  ___) | |___ ",
+			" |_|   |____/|_____|"
+		],
+		"welcome-build-command": "npx lerna run dev --scope='@automattic/full-site-editing' --stream --no-prefix"
 	}
 }

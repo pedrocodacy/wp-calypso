@@ -64,3 +64,5 @@ cached-requests.json
 /apps/*/types/
 /packages/*/dist/
 /packages/*/types/
+# Created by the @wordpress/scripts package:
+/apps/*/wordpress/
