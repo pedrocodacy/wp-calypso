@@ -1,5 +1,7 @@
 services:
   wordpress-develop:
+    ports:
+      - ${LOCAL_PORT-9999}:80
     volumes:
       - ../full-site-editing-plugin:/var/www/${LOCAL_DIR-src}/wp-content/plugins/%PLUGIN_INSTALL_DIR%
   php:
