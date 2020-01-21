@@ -53,10 +53,10 @@
 		"plugin-name": "Full Site Editing Plugin",
 		"docker-template": "./bin/docker-compose.override.yml.template",
 		"welcome-logo": [
-			" _____ ____  _____ ",
+			"  _____ ____  _____",
 			" |  ___/ ___|| ____|",
-			" | |_  \\___ \\|  _|  ",
-			" |  _|  ___) | |___ ",
+			" | |_  \\___ \\|  _|",
+			" |  _|  ___) | |___",
 			" |_|   |____/|_____|"
 		],
 		"welcome-build-command": "npx lerna run dev --scope='@automattic/full-site-editing' --stream --no-prefix"
