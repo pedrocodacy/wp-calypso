@@ -24,7 +24,7 @@ plugin location on your machine. In our case, this is `apps/full-site-editing/wo
 npx lerna run env --scope='@automattic/full-site-editing' --stream -- install
 ```
 
-At this point, you should be able to access WordPress at `localhost:8889`. The username is `admin` and the password is `password`.
+At this point, you should be able to access WordPress at `localhost:9999`. The username is `admin` and the password is `password`.
 
 ## File Architecture
 
