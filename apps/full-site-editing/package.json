@@ -16,7 +16,7 @@
 	},
 	"homepage": "https://github.com/Automattic/wp-calypso",
 	"scripts": {
-		"env": "wp-scripts env",
+		"env": "env LOCAL_PORT=9999 wp-scripts env",
 		"full-site-editing": "calypso-build --source='full-site-editing'",
 		"dev:full-site-editing": "npm run full-site-editing",
 		"build:full-site-editing": "NODE_ENV=production npm run full-site-editing",
