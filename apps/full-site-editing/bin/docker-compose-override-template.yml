@@ -4,7 +4,7 @@ services:
     volumes:
       - ../full-site-editing-plugin:/var/www/${LOCAL_DIR-src}/wp-content/plugins/%PLUGIN_INSTALL_DIR%
   php:
-    <<: *fse-base-servic
+    <<: *fse-base-service
   cli:
     <<: *fse-base-service
   phpunit:
