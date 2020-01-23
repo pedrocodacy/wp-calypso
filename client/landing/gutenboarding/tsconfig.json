@@ -12,6 +12,6 @@
 
 		"noEmit": true,
 		"incremental": true,
-		"tsBuildInfoFile": "../../../.tsc-cache/.tsbuildinfo-gutenboarding"
+		"tsBuildInfoFile": "../../../.tsc-cache/gutenboarding"
 	}
 }
