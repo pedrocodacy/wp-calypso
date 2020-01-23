@@ -1,13 +1,11 @@
 services:
   wordpress-develop:
+    &fse-base-service
     volumes:
       - ../full-site-editing-plugin:/var/www/${LOCAL_DIR-src}/wp-content/plugins/%PLUGIN_INSTALL_DIR%
   php:
-    volumes:
-      - ../full-site-editing-plugin:/var/www/${LOCAL_DIR-src}/wp-content/plugins/%PLUGIN_INSTALL_DIR%
+    <<: *fse-base-servic
   cli:
-    volumes:
-      - ../full-site-editing-plugin:/var/www/${LOCAL_DIR-src}/wp-content/plugins/%PLUGIN_INSTALL_DIR%
+    <<: *fse-base-service
   phpunit:
-    volumes:
-      - ../full-site-editing-plugin:/var/www/${LOCAL_DIR-src}/wp-content/plugins/%PLUGIN_INSTALL_DIR%
+    <<: *fse-base-service
