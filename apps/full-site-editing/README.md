@@ -26,6 +26,33 @@ npx lerna run env --scope='@automattic/full-site-editing' --stream -- install
 
 At this point, you should be able to access WordPress at `localhost:9999`. The username is `admin` and the password is `password`.
 
+## Tests
+Automated tests are an important part of our deploy process, making sure that everything is working smoothly before deplpoyment.
+
+### phpunit
+Assuming you have setup your local WordPress copy using the env install script (see above), you can run phpunit tests with the following command:
+
+```sh
+# Runs phpunit in the WordPress Docker install
+npx lerna run env --scope='@automattic/full-site-editing' --stream -- test-php
+```
+
+Each submodule of the FSE plugin (i.e. FSE, global styles, SPT) should have a phpunit directory like so: `full-site-editing/phpunit`. If you're creating tests for a submodule that doesn't have them yet, create that directory, and then add a new test suite to `full-site-editing-plulgin/phpunit.xml.dist` with this format:
+
+```xml
+	<testsuites>
+	...
+		<testsuite name="Submodule Name">
+			<directory suffix="-test.php">./submodule-directory/phpunit/</directory>
+		</testsuite>
+	...
+  </testsuites>
+```
+
+Then, create test files in that directory with this filename: `class-your-class-name-test.php`. The test class itself should look like `Your_Class_Name_Test` (to fit WordPress style standards).
+
+If you need to test other functionality, you may need to modify the bootstrap file, which can be found in `full-site-editing-plulgin/bin/phpunit-bootstrap.php`
+
 ## File Architecture
 
 ```
