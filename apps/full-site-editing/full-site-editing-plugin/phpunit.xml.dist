@@ -8,7 +8,7 @@
 	>
 	<testsuites>
 		<testsuite name="Full Site Editing">
-			<directory suffix="-test.php">./full-site-editing/phpunit/</directory>
+			<directory suffix="-test.php">./full-site-editing/tests/*</directory>
 		</testsuite>
 	</testsuites>
 </phpunit>
