@@ -36,7 +36,7 @@
 		"dev:global-styles": "npm run global-styles",
 		"dev": "node bin/npm-run-build.js --dev",
 		"build": "node bin/npm-run-build.js --build",
-		"test:e2e": "npx wp-scripts test-e2e --config='jest.config.js'",
+		"test:e2e": "npx wp-scripts test-e2e --config='jest.config.js' -- e2e",
 		"test:e2e:watch": "npm run test-e2e -- --watch --config='jest.config.js'",
 		"test:php": "npx wp-scripts env test-php",
 		"test:js": "npx wp-scripts test-unit-js --config='jest.config.js'",

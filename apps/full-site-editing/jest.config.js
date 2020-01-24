@@ -9,6 +9,8 @@
 
 /* eslint-disable import/no-extraneous-dependencies */
 
+const suffix = process.argv.includes( 'e2e' ) ? 'spec' : 'test';
+
 // @wordpress/scripts manually adds additional Jest config ontop of
 // @wordpress/jest-preset-default so we pull in this file to extend it
 const defaults = require( '@wordpress/scripts/config/jest-unit.config.js' );
@@ -17,7 +19,7 @@ const path = require( 'path' );
 const config = {
 	...defaults,
 	rootDir: path.normalize( '../../' ), // To detect wpp-calypso root node_modules
-	testMatch: [ `${ __dirname }/**/?(*.)+(spec|test).[jt]s?(x)` ],
+	testMatch: [ `${ __dirname }/**/?(*.)${ suffix }.[jt]s?(x)` ],
 	setupFilesAfterEnv: [
 		...( defaults.setupFilesAfterEnv || [] ), // extend if present
 		'<rootDir>/apps/full-site-editing/bin/js-unit-setup',
