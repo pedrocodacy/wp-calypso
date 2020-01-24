@@ -33,6 +33,14 @@ module.exports = {
 				step: false,
 			},
 		},
+		{
+			files: [ 'apps/full-site-editing/**/tests/**' ],
+			globals: {
+				browser: 'readonly',
+				page: 'readonly',
+				wp: 'readonly',
+			},
+		},
 		merge(
 			// ESLint doesn't allow the `extends` field inside `overrides`, so we need to compose
 			// the TypeScript config manually using internal bits from various plugins
