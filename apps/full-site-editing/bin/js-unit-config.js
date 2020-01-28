@@ -6,7 +6,7 @@
  *   2. Must have .test.EXT at the end of the filename
  *   3. EXT (above) must be one of js, ts, jsx, or tsx.
  * 
- * Note: In order to use a different jest conig for e2e tests, this config file
+ * Note: In order to use a different jest config for e2e tests, this config file
  * must be kept in the bin/ folder to prevent it from being detected as the
  * config file for e2e tests.
  */
