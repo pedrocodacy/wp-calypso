@@ -53,6 +53,7 @@ import jetpackProductInstall from './jetpack-product-install/reducer';
 import jetpackRemoteInstall from './jetpack-remote-install/reducer';
 import jetpackSync from './jetpack-sync/reducer';
 import jitm from './jitm/reducer';
+import legal from './legal/reducer';
 import login from './login/reducer';
 import media from './media/reducer';
 import memberships from './memberships/reducer';
@@ -143,6 +144,7 @@ const reducers = {
 	jetpackRemoteInstall,
 	jetpackSync,
 	jitm,
+	legal,
 	login,
 	media,
 	memberships,
