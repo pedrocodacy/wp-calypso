@@ -20,8 +20,8 @@ const needsInstall = () => {
 	try {
 		let lockfileTime = 0;
 		const packageDir = path.dirname( '.' );
-		if ( fs.existsSync( path.join( packageDir, 'package-lock.json' ) ) ) {
-			lockfileTime = fs.statSync( path.join( packageDir, 'package-lock.json' ) ).mtime;
+		if ( fs.existsSync( path.join( packageDir, 'yarn.lock' ) ) ) {
+			lockfileTime = fs.statSync( path.join( packageDir, 'yarn.lock' ) ).mtime;
 		}
 
 		if ( ! lockfileTime ) {
@@ -43,7 +43,7 @@ if ( needsInstall() ) {
 
 function install() {
 	// run a distclean to clean things up. just ci is not enough with the monorepo.
-	const cleanResult = spawnSync( 'npm', [ 'run', 'distclean' ], {
+	const cleanResult = spawnSync( 'yarn', [ 'run', 'distclean' ], {
 		shell: true,
 		stdio: 'inherit',
 	} );
@@ -52,7 +52,7 @@ function install() {
 		process.exit( cleanResult.status );
 	}
 
-	const installResult = spawnSync( 'npm', [ 'ci' ], {
+	const installResult = spawnSync( 'yarn', [ 'install', '--frozen-lockfile', '--ignore-engines' ], {
 		shell: true,
 		stdio: 'inherit',
 		env: { PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true', ...process.env },
