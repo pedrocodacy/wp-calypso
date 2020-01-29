@@ -259,6 +259,10 @@
 		"whybundled": "1.4.2",
 		"yargs": "13.3.0"
 	},
+	"resolutions": {
+		"@emotion/core": "10.0.27",
+		"@emotion/styled": "10.0.27"
+	},
 	"optionalDependencies": {
 		"fsevents": "2.1.2"
 	},
