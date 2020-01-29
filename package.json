@@ -4,6 +4,11 @@
 	"version": "0.17.0",
 	"description": "A pure REST-API and JS based version of the WordPress.com admin",
 	"private": true,
+	"workspaces": [
+		"client",
+		"apps/*",
+		"packages/*"
+	],
 	"license": "GPL-2.0-or-later",
 	"repository": {
 		"type": "git",
@@ -31,11 +36,6 @@
 		"server": [
 			"current node"
 		]
-	},
-	"dependencies": {
-		"@automattic/full-site-editing": "file:apps/full-site-editing",
-		"@automattic/wpcom-block-editor": "file:apps/wpcom-block-editor",
-		"wp-calypso": "file:client"
 	},
 	"engines": {
 		"node": "^12.13.1",
@@ -119,14 +119,14 @@
 		"components:storybook:start": "start-storybook -c packages/components/.storybook"
 	},
 	"devDependencies": {
-		"@automattic/babel-plugin-i18n-calypso": "file:./packages/babel-plugin-i18n-calypso",
-		"@automattic/babel-plugin-transform-wpcalypso-async": "file:./packages/babel-plugin-transform-wpcalypso-async",
-		"@automattic/calypso-build": "file:./packages/calypso-build",
-		"@automattic/calypso-color-schemes": "file:./packages/calypso-color-schemes",
-		"@automattic/color-studio": "2.2.0",
-		"@automattic/webpack-config-flag-plugin": "file:packages/webpack-config-flag-plugin",
-		"@automattic/webpack-extensive-lodash-replacement-plugin": "file:./packages/webpack-extensive-lodash-replacement-plugin",
-		"@automattic/webpack-inline-constant-exports-plugin": "file:./packages/webpack-inline-constant-exports-plugin",
+		"@automattic/babel-plugin-i18n-calypso": "~1.0.3",
+		"@automattic/babel-plugin-transform-wpcalypso-async": "~1.0.1",
+		"@automattic/calypso-build": "~6.0.0",
+		"@automattic/calypso-color-schemes": "~2.1.0",
+		"@automattic/color-studio": "~2.2.0",
+		"@automattic/webpack-config-flag-plugin": "~1.0.0",
+		"@automattic/webpack-extensive-lodash-replacement-plugin": "~0.0.2",
+		"@automattic/webpack-inline-constant-exports-plugin": "~0.0.1",
 		"@babel/cli": "7.8.3",
 		"@babel/core": "7.8.3",
 		"@storybook/addon-actions": "5.3.8",
@@ -173,7 +173,7 @@
 		"babel-plugin-add-module-exports": "1.0.2",
 		"babel-plugin-dynamic-import-node": "2.3.0",
 		"babel-plugin-transform-react-remove-prop-types": "0.4.24",
-		"calypso-codemods": "file:./packages/calypso-codemods",
+		"calypso-codemods": "0.1.6",
 		"caniuse-lite": "1.0.30001022",
 		"chai": "4.2.0",
 		"chai-enzyme": "1.0.0-beta.1",
@@ -189,13 +189,13 @@
 		"enzyme-to-json": "3.4.3",
 		"eslint": "6.8.0",
 		"eslint-config-prettier": "6.9.0",
-		"eslint-config-wpcalypso": "file:./packages/eslint-config-wpcalypso",
+		"eslint-config-wpcalypso": "~5.0.0",
 		"eslint-plugin-import": "2.20.0",
 		"eslint-plugin-jest": "23.6.0",
 		"eslint-plugin-jsdoc": "18.4.3",
 		"eslint-plugin-jsx-a11y": "6.2.3",
 		"eslint-plugin-react": "7.17.0",
-		"eslint-plugin-wpcalypso": "file:./packages/eslint-plugin-wpcalypso",
+		"eslint-plugin-wpcalypso": "~4.1.0",
 		"exports-loader": "0.7.0",
 		"fake-indexeddb": "3.0.0",
 		"fork-ts-checker-webpack-plugin": "3.1.1",
@@ -205,7 +205,7 @@
 		"html-loader": "0.5.5",
 		"html-webpack-plugin": "3.2.0",
 		"husky": "3.1.0",
-		"i18n-calypso-cli": "file:./packages/i18n-calypso-cli",
+		"i18n-calypso-cli": "~1.0.0",
 		"ignore-loader": "0.1.2",
 		"imports-loader": "0.8.0",
 		"interpolate-components": "1.1.1",
