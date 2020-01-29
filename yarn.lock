@@ -12,9 +12,9 @@
     recast "^0.12.1"
 
 "@automattic/color-studio@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@automattic/color-studio/-/color-studio-2.2.0.tgz#c8720cf3fadc3637b6d8cacca434bf9aef79fa6c"
-  integrity sha512-ttIF8rPSRJ5hKkDxKESDXyGmbqV3Eg4WCVUmKJp5BQXlbQOtwZ1EqUHmZo+IofXXpO2ngn2GiFz+KGt56C5WMA==
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@automattic/color-studio/-/color-studio-2.2.1.tgz#e920af382a4db624ebca1591adace289912bf37b"
+  integrity sha512-doMeOR5ly+qviYgWhWStByZHnnv3AFBC4Tj6aZLTrw8voulIu9AUv3Z9eit8a68uzCI77VkN7fUFadOiYIYBWg==
 
 "@automattic/mini-css-extract-plugin-with-rtl@0.8.0":
   version "0.8.0"
