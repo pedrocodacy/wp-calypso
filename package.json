@@ -173,7 +173,7 @@
 		"babel-plugin-add-module-exports": "1.0.2",
 		"babel-plugin-dynamic-import-node": "2.3.0",
 		"babel-plugin-transform-react-remove-prop-types": "0.4.24",
-		"calypso-codemods": "0.1.6",
+		"calypso-codemods": "^0.1.6",
 		"caniuse-lite": "1.0.30001022",
 		"chai": "4.2.0",
 		"chai-enzyme": "1.0.0-beta.1",
