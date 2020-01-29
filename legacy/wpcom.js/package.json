@@ -6,6 +6,7 @@
   "author": "Automattic, Inc.",
   "private": true,
   "scripts": {
+	"prepare": "make all",
     "prepublish": "make all"
   },
   "contributors": [
