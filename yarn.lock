@@ -11,35 +11,10 @@
     lodash "^4.17.4"
     recast "^0.12.1"
 
-"@automattic/calypso-color-schemes@file:packages/calypso-color-schemes":
-  version "2.1.0"
-
-"@automattic/calypso-polyfills@file:packages/calypso-polyfills":
-  version "1.0.0"
-  dependencies:
-    core-js "3.6.3"
-    isomorphic-fetch "2.2.1"
-    regenerator-runtime "0.13.3"
-    svg4everybody "2.1.9"
-
-"@automattic/color-studio@~2.2.0":
+"@automattic/color-studio@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@automattic/color-studio/-/color-studio-2.2.0.tgz#c8720cf3fadc3637b6d8cacca434bf9aef79fa6c"
   integrity sha512-ttIF8rPSRJ5hKkDxKESDXyGmbqV3Eg4WCVUmKJp5BQXlbQOtwZ1EqUHmZo+IofXXpO2ngn2GiFz+KGt56C5WMA==
-
-"@automattic/composite-checkout@file:packages/composite-checkout":
-  version "1.0.0"
-  dependencies:
-    "@emotion/core" "10.0.22"
-    "@emotion/styled" "10.0.23"
-    "@wordpress/data" "^4.9.2"
-    "@wordpress/i18n" "3.8.0"
-    debug "4.1.1"
-    emotion-theming "10.0.19"
-    interpolate-components "1.1.1"
-    prop-types "^15.7.2"
-    react "^16.8.6"
-    react-stripe-elements "^5.1.0"
 
 "@automattic/mini-css-extract-plugin-with-rtl@0.8.0":
   version "0.8.0"
@@ -51,7 +26,7 @@
     schema-utils "^1.0.0"
     webpack-sources "^1.1.0"
 
-"@automattic/react-virtualized@~9.21.2":
+"@automattic/react-virtualized@^9.21.2":
   version "9.21.2"
   resolved "https://registry.yarnpkg.com/@automattic/react-virtualized/-/react-virtualized-9.21.2.tgz#ea14243e7e7811eaa14daed3f0a6f4579208996f"
   integrity sha512-xAhCNsM+JvC1B/2T7OY4AwJFI5SdkJLLaBhehH96iz8ZlDBt9ayE8ZnpSpdMStq7xeXcXqkzuNEXNHNF7xU8Mg==
@@ -10928,21 +10903,6 @@ husky@3.1.0:
     read-pkg "^5.2.0"
     run-node "^1.0.0"
     slash "^3.0.0"
-
-"i18n-calypso@file:packages/i18n-calypso":
-  version "4.1.0"
-  dependencies:
-    "@tannin/sprintf" "^1.1.0"
-    "@wordpress/compose" "^3.7.2"
-    debug "^4.0.0"
-    events "^3.0.0"
-    hash.js "^1.1.5"
-    interpolate-components "^1.1.1"
-    lodash "^4.17.11"
-    lru "^3.1.0"
-    react "^16.8.3"
-    tannin "^1.1.1"
-    use-subscription "^1.2.0"
 
 iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@~0.4.13:
   version "0.4.24"
