@@ -26,7 +26,7 @@ RUN        bash /tmp/env-config.sh
 # This layer is populated with up-to-date files from
 # Calypso development.
 COPY . /calypso/
-RUN yarn install --frozen-lockfile --ignore-engines
+RUN yarn install --frozen-lockfile
 
 
 # Build the final layer

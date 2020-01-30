@@ -122,7 +122,7 @@ references:
     environment:
       PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
     name: Install dependencies
-    command: yarn install --frozen-lockfile --ignore-engines
+    command: yarn install --frozen-lockfile
 
   save-npm-cache: &save-npm-cache
     name: 'Save node_modules cache'

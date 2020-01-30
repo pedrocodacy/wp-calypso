@@ -52,7 +52,7 @@ function install() {
 		process.exit( cleanResult.status );
 	}
 
-	const installResult = spawnSync( 'yarn', [ 'install', '--frozen-lockfile', '--ignore-engines' ], {
+	const installResult = spawnSync( 'yarn', [ 'install', '--frozen-lockfile' ], {
 		shell: true,
 		stdio: 'inherit',
 		env: { PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true', ...process.env },
