@@ -10,7 +10,7 @@ import { AppState } from 'types';
  */
 import { getVariationForUser, isLoading } from 'state/experiments/selectors';
 import QueryExperiments from 'components/data/query-experiments';
-import { ExperimentProps } from './experimentProps';
+import { ExperimentProps } from './experiment-props';
 
 export { default as Variation } from './variation';
 export { default as DefaultVariation } from './default-variation';
