@@ -102,7 +102,7 @@ async function updateCreditCard( {
 		const daysAwayFromRenewal = moment( purchase.renewDate ).diff( moment(), 'days' );
 		let noticeMessage = '';
 		let noticeOptions = {};
-		if ( daysAwayFromRenewal > 30 ) {
+		if ( daysAwayFromRenewal > 90 ) {
 			noticeMessage = translate( 'Your credit card details were successfully updated.' );
 			noticeOptions = {
 				persistent: true,
