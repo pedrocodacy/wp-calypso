@@ -8,7 +8,7 @@ module.exports = {
 		'plugin:jsx-a11y/recommended',
 		'plugin:jest/recommended',
 		'prettier',
-		'prettier/react',
+		'prettier/react'
 	],
 	overrides: [
 		{
